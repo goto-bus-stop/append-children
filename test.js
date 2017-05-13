@@ -34,4 +34,17 @@ test('things that can be stringified', function (t) {
   t.end()
 })
 
+test('arrays', function (t) {
+  var el = document.createElement('div')
+  var p = document.createElement('p')
+  appendChildren(document.createElement('p'), [])
+  appendChildren(el, [[
+    [document.createElement('span')],
+    'hello', /world/, 1234,
+    document.createElement('br'),
+    p
+  ]])
 
+  t.equal(el.outerHTML, '<div><span></span>hello/world/1234<br><p></p></div>')
+  t.end()
+})
