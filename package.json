@@ -1,0 +1,21 @@
+{
+  "name": "append-children",
+  "version": "0.0.0",
+  "description": "Append things to a DOM element.",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/goto-bus-stop/append-children.git"
+  },
+  "author": "Renée Kooi <renee@kooi.me>",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "jsdom": "^9.12.0",
+    "jsdom-global": "^2.1.1",
+    "tape": "^4.6.3"
+  }
+}
