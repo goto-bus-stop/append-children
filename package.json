@@ -1,6 +1,6 @@
 {
   "name": "append-children",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Append things to a DOM element.",
   "main": "index.js",
   "scripts": {
