@@ -1,6 +1,6 @@
 # append-children
 
-Append children to a DOM element.
+Append children to a DOM element, like [Element.append](https://developer.mozilla.org/en-US/docs/Web/API/Element/append) for very old browsers.
 
 ## Install
 
