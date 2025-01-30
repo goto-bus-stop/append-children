@@ -48,3 +48,17 @@ test('arrays', function (t) {
   t.equal(el.outerHTML, '<div><span></span>hello/world/1234<br><p></p></div>')
   t.end()
 })
+
+test('ignores null and undefined', function (t) {
+  var el = document.createElement('div')
+  appendChildren(el, [
+    'a',
+    null,
+    'b',
+    undefined,
+    'c'
+  ])
+
+  t.equal(el.outerHTML, '<div>abc</div>')
+  t.end()
+})
